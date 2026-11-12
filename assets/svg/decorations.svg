@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <!-- Dried Floral Branch Motif -->
+  <symbol id="icon-botanical-branch" viewBox="0 0 100 100">
+    <path d="M50 95 C 48 70, 52 40, 50 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M50 75 C 40 68, 30 65, 22 66 C 24 60, 35 60, 50 70" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M51 60 C 62 52, 72 50, 80 52 C 77 45, 65 47, 51 55" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M50 45 C 38 38, 28 35, 20 37 C 23 30, 36 32, 50 40" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M50 30 C 60 22, 70 20, 78 22 C 75 16, 62 18, 50 25" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <circle cx="20" cy="37" r="2.5" fill="currentColor"/>
+    <circle cx="80" cy="52" r="2.5" fill="currentColor"/>
+    <circle cx="22" cy="66" r="2.5" fill="currentColor"/>
+    <circle cx="78" cy="22" r="2.5" fill="currentColor"/>
+    <circle cx="50" cy="5" r="3" fill="currentColor"/>
+  </symbol>
+
+  <!-- Shola Bloom Outline -->
+  <symbol id="icon-shola-bloom" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    <!-- Inner Petals -->
+    <path d="M50 40 C 45 30, 55 30, 50 40" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M60 50 C 70 45, 70 55, 60 50" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M50 60 C 55 70, 45 70, 50 60" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M40 50 C 30 55, 30 45, 40 50" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <!-- Outer Petals Layer 1 -->
+    <path d="M50 32 C 38 12, 62 12, 50 32" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M68 50 C 88 38, 88 62, 68 50" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M50 68 C 62 88, 38 88, 50 68" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M32 50 C 12 62, 12 38, 32 50" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <!-- Outer Petals Diagonals -->
+    <path d="M62 38 C 80 20, 90 35, 62 38" stroke="currentColor" stroke-width="1" fill="none"/>
+    <path d="M62 62 C 90 65, 80 80, 62 62" stroke="currentColor" stroke-width="1" fill="none"/>
+    <path d="M38 62 C 20 80, 10 65, 38 62" stroke="currentColor" stroke-width="1" fill="none"/>
+    <path d="M38 38 C 10 35, 20 20, 38 38" stroke="currentColor" stroke-width="1" fill="none"/>
+    <circle cx="50" cy="50" r="3" fill="currentColor"/>
+  </symbol>
+
+  <!-- Delicate Stem -->
+  <symbol id="icon-delicate-stem" viewBox="0 0 60 140">
+    <path d="M30 135 Q 25 80, 30 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M29 110 Q 15 100, 12 92 C 16 88, 26 95, 29 105" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M29 85 Q 45 75, 48 67 C 44 63, 34 70, 29 80" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M29 60 Q 15 50, 12 42 C 16 38, 26 45, 29 55" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <path d="M29 35 Q 45 25, 48 17 C 44 13, 34 20, 29 30" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <ellipse cx="30" cy="10" rx="3" ry="5" fill="currentColor"/>
+  </symbol>
+
+  <!-- Organic Botanical Leaf Motif -->
+  <symbol id="icon-botanical-leaf" viewBox="0 0 80 80">
+    <path d="M40 70 C 40 70, 65 50, 65 30 C 65 15, 50 10, 40 10 C 30 10, 15 15, 15 30 C 15 50, 40 70, 40 70 Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    <path d="M40 70 L 40 15" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M40 55 C 48 48, 56 46, 58 45" stroke="currentColor" stroke-width="1"/>
+    <path d="M40 45 C 32 38, 24 36, 22 35" stroke="currentColor" stroke-width="1"/>
+    <path d="M40 35 C 48 28, 54 26, 56 25" stroke="currentColor" stroke-width="1"/>
+    <path d="M40 25 C 34 20, 28 18, 26 17" stroke="currentColor" stroke-width="1"/>
+  </symbol>
+
+  <!-- Line Art Icons for Why Shola -->
+  <symbol id="icon-natural" viewBox="0 0 64 64">
+    <path d="M32 58 C 32 58, 54 44, 54 28 C 54 14, 42 6, 32 6 C 22 6, 10 14, 10 28 C 10 44, 32 58, 32 58 Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 58 L 32 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M32 44 C 40 38, 46 36, 48 35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M32 34 C 24 28, 18 26, 16 25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M32 24 C 38 19, 42 18, 44 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-artisan" viewBox="0 0 64 64">
+    <path d="M32 8 C 24 8, 18 14, 18 22 C 18 30, 26 38, 32 44 C 38 38, 46 30, 46 22 C 46 14, 40 8, 32 8 Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="32" cy="22" r="5" stroke="currentColor" stroke-width="1.8" fill="none"/>
+    <path d="M12 56 C 12 46, 20 42, 32 42 C 44 42, 52 46, 52 56" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M8 28 L 14 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M56 28 L 50 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M10 18 L 16 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M54 18 L 48 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-decor" viewBox="0 0 64 64">
+    <path d="M22 56 L 42 56 C 45 56, 47 54, 47 51 L 44 28 L 20 28 L 17 51 C 17 54, 19 56, 22 56 Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/>
+    <ellipse cx="32" cy="28" rx="12" ry="4" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M32 24 L 32 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="32" cy="7" r="3" fill="currentColor"/>
+    <path d="M24 25 C 22 18, 18 14, 15 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="14" cy="11" r="2.5" fill="currentColor"/>
+    <path d="M40 25 C 42 18, 46 14, 49 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="50" cy="11" r="2.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-timeless" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M32 16 L 32 32 L 44 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="32" cy="32" r="3" fill="currentColor"/>
+    <path d="M12 20 C 14 16, 18 12, 22 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M52 20 C 50 16, 46 12, 42 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </symbol>
+</svg>

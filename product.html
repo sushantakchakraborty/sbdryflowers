@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products &amp; Catalog | SB SHOLA WOOD FLOWERS - Handcrafted Flowers &amp; Stems</title>
+  <meta name="description" content="Explore our catalog of handcrafted natural shola wood flowers, decorative floral pine sticks, lotus blooms, dried stems, and bouquets for retail and wholesale supply across India.">
+  <meta name="keywords" content="SB Shola Wood Flowers catalog, shola wood roses, shola pine stick, shola lotus bloom, decorative floral stems, dried flower bunch, wholesale shola flowers">
+
+  <!-- Preload Critical Hero Image for Maximum Performance -->
+  <link rel="preload" as="image" href="assets/images/hero-shola.jpg">
+
+  <!-- Google Fonts: Cormorant Garamond & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="product-page">
+
+  <!-- Subtle Botanical Canvas for soft floating particles -->
+  <canvas id="botanical-canvas"></canvas>
+
+  <!-- SVG Botanical Sprite Icons Definition -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-branch" viewBox="0 0 100 100">
+      <path d="M50 95 C 48 70, 52 40, 50 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      <path d="M50 75 C 40 68, 30 65, 22 66 C 24 60, 35 60, 50 70" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M51 60 C 62 52, 72 50, 80 52 C 77 45, 65 47, 51 55" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M50 45 C 38 38, 28 35, 20 37 C 23 30, 36 32, 50 40" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M50 30 C 60 22, 70 20, 78 22 C 75 16, 62 18, 50 25" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <circle cx="20" cy="37" r="2.5" fill="currentColor"/>
+      <circle cx="80" cy="52" r="2.5" fill="currentColor"/>
+      <circle cx="22" cy="66" r="2.5" fill="currentColor"/>
+      <circle cx="78" cy="22" r="2.5" fill="currentColor"/>
+      <circle cx="50" cy="5" r="3" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="icon-shola-bloom" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+      <path d="M50 40 C 45 30, 55 30, 50 40" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M60 50 C 70 45, 70 55, 60 50" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M50 60 C 55 70, 45 70, 50 60" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M40 50 C 30 55, 30 45, 40 50" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M50 32 C 38 12, 62 12, 50 32" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M68 50 C 88 38, 88 62, 68 50" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M50 68 C 62 88, 38 88, 50 68" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M32 50 C 12 62, 12 38, 32 50" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <circle cx="50" cy="50" r="3" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="icon-natural-leaf" viewBox="0 0 64 64">
+      <path d="M32 58 C 32 58, 54 44, 54 28 C 54 14, 42 6, 32 6 C 22 6, 10 14, 10 28 C 10 44, 32 58, 32 58 Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M32 58 L 32 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M32 44 C 40 38, 46 36, 48 35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M32 34 C 24 28, 18 26, 16 25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M32 24 C 38 19, 42 18, 44 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="icon-artisan-craft" viewBox="0 0 64 64">
+      <path d="M32 8 C 24 8, 18 14, 18 22 C 18 30, 26 38, 32 44 C 38 38, 46 30, 46 22 C 46 14, 40 8, 32 8 Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <circle cx="32" cy="22" r="5" stroke="currentColor" stroke-width="1.8" fill="none"/>
+      <path d="M12 56 C 12 46, 20 42, 32 42 C 44 42, 52 46, 52 56" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="icon-versatile-decor" viewBox="0 0 64 64">
+      <path d="M22 56 L 42 56 C 45 56, 47 54, 47 51 L 44 28 L 20 28 L 17 51 C 17 54, 19 56, 22 56 Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/>
+      <ellipse cx="32" cy="28" rx="12" ry="4" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M32 24 L 32 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="32" cy="7" r="3" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="icon-timeless-clock" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M32 16 L 32 32 L 44 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="32" cy="32" r="3" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <!-- ========================================================================== 
+       TOPBAR (SHARED COMPONENT)
+       ========================================================================== -->
+  <div class="site-topbar" id="site-topbar">
+    <div class="container-custom topbar-container">
+      <div class="topbar-left">
+        <a href="tel:+919564001936" class="topbar-contact" id="topbar-phone">
+          <i class="fas fa-phone-alt" aria-hidden="true"></i>
+          <span>+91 9564001936</span>
+        </a>
+        <span class="topbar-divider"></span>
+        <span class="topbar-badge">
+          <i class="fas fa-truck-fast" aria-hidden="true"></i> Pan-India Supply Available
+        </span>
+      </div>
+      <div class="topbar-right">
+        <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20your%20handcrafted%20shola%20dry%20flowers." target="_blank" rel="noopener noreferrer" class="topbar-social" aria-label="Chat on WhatsApp" id="topbar-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/sb_shola_wood_flowers_/" target="_blank" rel="noopener noreferrer" class="topbar-social" aria-label="Visit SB Shola Wood Flowers on Instagram" id="topbar-instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================== 
+       NAVBAR (GLOBAL COMPONENT - PRODUCT ACTIVE)
+       ========================================================================== -->
+  <header class="site-navbar" id="site-navbar">
+    <div class="container-custom nav-container">
+      <!-- Left: Logo -->
+      <a href="index.html" class="brand-wordmark navbar-brand" id="brand-logo-link">
+        <img src="assets/images/logo.png" alt="SB Shola Wood Flowers Logo" id="brand-logo" class="brand-logo img-fluid">
+      </a>
+
+      <!-- Center: Navigation Menu -->
+      <nav class="nav-center-menu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link-item" id="nav-home">HOME</a></li>
+          <li><a href="about.html" class="nav-link-item" id="nav-about">ABOUT</a></li>
+          <li><a href="product.html" class="nav-link-item active" id="nav-product">PRODUCT</a></li>
+          <li><a href="gallery.html" class="nav-link-item" id="nav-gallery">GALLERY</a></li>
+          <li><a href="contact.html" class="nav-link-item" id="nav-contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Direct Call, WhatsApp Button & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola" id="nav-call-btn">
+          <i class="fas fa-phone-alt"></i> CALL NOW
+        </a>
+        <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20your%20handcrafted%20shola%20dry%20flowers." target="_blank" rel="noopener noreferrer" class="btn-shola btn-whatsapp-shola btn-sm-shola" id="nav-whatsapp-btn">
+          <i class="fab fa-whatsapp"></i> WHATSAPP ENQUIRY
+        </a>
+        <button class="nav-mobile-toggle" aria-label="Open Navigation Menu" id="mobile-toggle-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-hidden="true" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-wordmark navbar-brand">
+        <span class="brand-sub">MANUFACTURER</span>
+        <img src="assets/images/logo.png" alt="SB Shola Wood Flowers Logo" class="brand-logo img-fluid">
+        <span class="brand-tagline">HANDCRAFTED BOTANICAL CRAFT</span>
+      </div>
+      <button class="mobile-nav-close" aria-label="Close Menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">HOME</a></li>
+      <li><a href="about.html" class="mobile-nav-link">ABOUT</a></li>
+      <li><a href="product.html" class="mobile-nav-link active">PRODUCT</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link">GALLERY</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">CONTACT</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="tel:+919564001936" class="btn-shola btn-outline-shola w-100" style="width: 100%; margin-bottom: 0.6rem;">
+        <i class="fas fa-phone-alt"></i> CALL NOW (9564001936)
+      </a>
+      <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola w-100" style="width: 100%; margin-bottom: 0.8rem;">
+        <i class="fab fa-whatsapp"></i> WHATSAPP ENQUIRY (9564001936)
+      </a>
+      <p style="font-size: 0.75rem; text-align: center; color: var(--c-light-brown); text-transform: uppercase; letter-spacing: 0.15em; margin: 0;">
+        Pan-India Supply Available
+      </p>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       SECTION 01: PRODUCT PAGE HERO
+       ========================================================================== -->
+  <section class="inner-page-hero">
+    <svg class="botanical-corner top-right" aria-hidden="true"><use href="#icon-branch"/></svg>
+    <svg class="botanical-corner bottom-left" aria-hidden="true"><use href="#icon-shola-bloom"/></svg>
+
+    <div class="container-custom">
+      <div class="inner-page-hero-content reveal-fade-up">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+          <span>Product Catalog</span>
+        </div>
+        <h1 class="hero-title">Our Floral Collection &amp; Catalog</h1>
+        <div class="botanical-divider">
+          <div class="line"></div>
+          <svg><use href="#icon-shola-bloom"/></svg>
+          <div class="line"></div>
+        </div>
+        <p class="hero-subtitle">
+          Natural Shola Flowers, Stems &amp; Handcrafted Botanical Elements
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 02 & 03: COLLECTION INTRO & CATEGORY QUICK JUMP
+       ========================================================================== -->
+  <section class="section-padding" style="background-color: var(--c-pure-white); padding-bottom: 2rem;" id="catalog-overview">
+    <div class="container-custom">
+      <div class="section-header reveal-fade-up" style="margin-bottom: 2.5rem;">
+        <span class="section-eyebrow">BOTANICAL CATALOGUE</span>
+        <h2 class="section-title">Crafted for Styling, Décor &amp; Wholesale</h2>
+        <div class="botanical-divider">
+          <div class="line"></div>
+          <svg><use href="#icon-branch"/></svg>
+          <div class="line"></div>
+        </div>
+        <p class="section-subtitle">
+          Our diverse product line includes individual sculpted blooms, decorative pine sticks, slender botanical stems, and ready-to-display floral bunches tailored for weddings, events, boutique retail, and interior décor.
+        </p>
+      </div>
+
+      <!-- Quick Category Jump Cards -->
+      <div class="category-nav-grid reveal-fade-up">
+        <a href="#shola-flowers" class="category-nav-card">
+          <div style="font-size: 1.8rem; color: var(--c-light-brown); margin-bottom: 0.5rem;"><i class="fas fa-fan"></i></div>
+          <h3>Shola Flowers</h3>
+          <p>Handcrafted roses, lotus blooms, and botanical floral silhouettes.</p>
+          <span class="cat-link">Explore Flowers <i class="fas fa-arrow-down"></i></span>
+        </a>
+
+        <a href="#flower-stems" class="category-nav-card">
+          <div style="font-size: 1.8rem; color: var(--c-light-brown); margin-bottom: 0.5rem;"><i class="fas fa-seedling"></i></div>
+          <h3>Flower Stems</h3>
+          <p>Pine sticks, slender twig elements, and decorative botanical stems.</p>
+          <span class="cat-link">Explore Stems <i class="fas fa-arrow-down"></i></span>
+        </a>
+
+        <a href="#floral-bunches" class="category-nav-card">
+          <div style="font-size: 1.8rem; color: var(--c-light-brown); margin-bottom: 0.5rem;"><i class="fas fa-spa"></i></div>
+          <h3>Floral Bunches</h3>
+          <p>Curated tabletop bunches, pampas bouquets, and bulk assortments.</p>
+          <span class="cat-link">Explore Bunches <i class="fas fa-arrow-down"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 04: SHOLA FLOWERS CATEGORY
+       ========================================================================== -->
+  <section class="section-padding products-section" id="shola-flowers">
+    <svg class="botanical-corner top-right" aria-hidden="true"><use href="#icon-shola-bloom"/></svg>
+    <div class="container-custom">
+      <div class="section-header reveal-fade-up">
+        <span class="section-eyebrow">CATEGORY 01</span>
+        <h2 class="section-title">Shola Flowers</h2>
+        <div class="botanical-divider">
+          <div class="line"></div>
+          <svg><use href="#icon-shola-bloom"/></svg>
+          <div class="line"></div>
+        </div>
+        <p class="section-subtitle">
+          Individual handcrafted blossoms carved from pure natural shola pith. Ideal for focal florals, gift accents, and bespoke arrangements.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1: Shola Wood Roses -->
+        <div class="product-card reveal-fade-up delay-1">
+          <div class="product-image-container">
+            <span class="product-badge">Classic Blossom</span>
+            <img src="assets/images/shola-rose-blooms.jpg" alt="Handcrafted Shola Wood Roses" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Shola Flower</span>
+            <h3 class="product-title">Shola Wood Roses</h3>
+            <p class="product-desc">
+              Classic spiraled rose blossoms hand-curled from spongy white shola sheets. Soft to touch with an organic matte finish suitable for luxury bouquets.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20Shola%20Wood%20Roses." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Shola Lotus Bloom -->
+        <div class="product-card reveal-fade-up delay-2">
+          <div class="product-image-container">
+            <span class="product-badge">Traditional Bloom</span>
+            <img src="assets/images/shola-lotus-bloom.jpg" alt="Shola Lotus Bloom Botanical Flower" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Shola Flower</span>
+            <h3 class="product-title">Shola Lotus Bloom</h3>
+            <p class="product-desc">
+              Layered open-petal lotus design inspired by classic Indian botanical art. Perfect for festive decorations, floral rangolis, and stage backdrops.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20the%20Shola%20Lotus%20Bloom." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Shola Cedar Roses -->
+        <div class="product-card reveal-fade-up delay-3">
+          <div class="product-image-container">
+            <span class="product-badge">Textured Floral</span>
+            <img src="assets/images/shola-cedar-roses.jpg" alt="Shola Cedar Roses Flower" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Shola Flower</span>
+            <h3 class="product-title">Shola Cedar Roses</h3>
+            <p class="product-desc">
+              Geometric, layered cedar-style rose forms showcasing rich botanical textures. An exceptional focal flower for modern dried bouquets.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20Shola%20Cedar%20Roses." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Shola Daisy & Anemone -->
+        <div class="product-card reveal-fade-up delay-1">
+          <div class="product-image-container">
+            <span class="product-badge">Delicate Form</span>
+            <img src="assets/images/shola-daisy-anemone.jpg" alt="Shola Daisy and Anemone Blooms" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Shola Flower</span>
+            <h3 class="product-title">Daisy &amp; Anemone Blooms</h3>
+            <p class="product-desc">
+              Delicate multi-petal wild daisy and anemone silhouettes with detailed center pistils, crafted to add cheerful organic accents.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20Daisy%20and%20Anemone%20Blooms." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Pink Chrysanthemum & Zinnia -->
+        <div class="product-card reveal-fade-up delay-2">
+          <div class="product-image-container">
+            <span class="product-badge">Artisan Color</span>
+            <img src="assets/images/shola-pink-chrysanthemum.jpg" alt="Shola Pink Chrysanthemum" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Shola Flower</span>
+            <h3 class="product-title">Pink Chrysanthemum</h3>
+            <p class="product-desc">
+              Subtly tinted shola chrysanthemum blooms featuring dense fine-cut petals, adding a soft pop of botanical warmth to neutral arrangements.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20Pink%20Chrysanthemum%20Blooms." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Raw Bark Two-Tone Roses -->
+        <div class="product-card reveal-fade-up delay-3">
+          <div class="product-image-container">
+            <span class="product-badge">Rustic Organic</span>
+            <img src="assets/images/shola-raw-bark-roses.jpg" alt="Raw Bark Shola Roses" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Shola Flower</span>
+            <h3 class="product-title">Raw Bark Shola Roses</h3>
+            <p class="product-desc">
+              Crafted retaining subtle strips of natural brown shola bark along petal rims, giving a distinctive two-tone rustic aesthetic.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20Raw%20Bark%20Shola%20Roses." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7: Shola Daffodil & Narcissus -->
+        <div class="product-card reveal-fade-up delay-1">
+          <div class="product-image-container">
+            <span class="product-badge">Artisan Blossom</span>
+            <img src="assets/images/shola-daffodil-blooms.jpg" alt="Shola Daffodil and Narcissus Blooms" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Shola Flower</span>
+            <h3 class="product-title">Daffodil &amp; Narcissus</h3>
+            <p class="product-desc">
+              Sculpted multi-petal star daffodil blooms with layered corona cups and delicate bark accents for upscale botanical styling.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20Daffodil%20Blooms." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8: Two-Tone Spiral Roses -->
+        <div class="product-card reveal-fade-up delay-2">
+          <div class="product-image-container">
+            <span class="product-badge">Fine Detail</span>
+            <img src="assets/images/shola-two-tone-rose-blooms.jpg" alt="Two-Tone Spiral Center Shola Roses" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Shola Flower</span>
+            <h3 class="product-title">Two-Tone Spiral Roses</h3>
+            <p class="product-desc">
+              Precision hand-rolled rosebuds with organic darker center spiraling, creating high visual contrast and natural depth in arrangements.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20Two-Tone%20Roses." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 05: FLOWER STEMS CATEGORY
+       ========================================================================== -->
+  <section class="section-padding" style="background-color: var(--c-pure-white);" id="flower-stems">
+    <div class="container-custom">
+      <div class="section-header reveal-fade-up">
+        <span class="section-eyebrow">CATEGORY 02</span>
+        <h2 class="section-title">Flower Stems &amp; Decorative Sticks</h2>
+        <div class="botanical-divider">
+          <div class="line"></div>
+          <svg><use href="#icon-branch"/></svg>
+          <div class="line"></div>
+        </div>
+        <p class="section-subtitle">
+          Slender natural stems mounted with miniature shola carvings, pine sticks, and dried twigs designed for tall vases and backdrop installations.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Stem 1: Shola Pine Stick -->
+        <div class="product-card reveal-fade-up delay-1">
+          <div class="product-image-container">
+            <span class="product-badge">Signature Specialty</span>
+            <img src="assets/images/pine.jpg" alt="Handcrafted Shola Pine Stick Botanical Element" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Flower Stem</span>
+            <h3 class="product-title">Shola Pine Stick</h3>
+            <p class="product-desc">
+              Finely carved pinecone elements mounted on sturdy natural wood stems. Ideal for vertical vase arrangements and rustic home corners.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20the%20Shola%20Pine%20Stick." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stem 2: Shola Decorative Stems -->
+        <div class="product-card reveal-fade-up delay-2">
+          <div class="product-image-container">
+            <span class="product-badge">Vase Accent</span>
+            <img src="assets/images/shola-decorative-stems.jpg" alt="Shola Decorative Stems &amp; Twigs" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Flower Stem</span>
+            <h3 class="product-title">Decorative Stems &amp; Twigs</h3>
+            <p class="product-desc">
+              Natural slender twigs adorned with micro-shola blossoms. Provides airy height, organic texture, and visual balance to any floral display.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20Decorative%20Stems." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stem 3: Shola Berry Stems -->
+        <div class="product-card reveal-fade-up delay-3">
+          <div class="product-image-container">
+            <span class="product-badge">Botanical Element</span>
+            <img src="assets/images/shola-berry-stems.jpg" alt="Shola Berry Stems" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Flower Stem</span>
+            <h3 class="product-title">Shola Berry Stems</h3>
+            <p class="product-desc">
+              Hand-rolled shola berry clusters mounted along wired stems, bringing delicate organic dimension to bouquets, wreaths, and table runners.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20Shola%20Berry%20Stems." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 06: FLORAL BUNCHES CATEGORY
+       ========================================================================== -->
+  <section class="section-padding products-section" id="floral-bunches">
+    <div class="container-custom">
+      <div class="section-header reveal-fade-up">
+        <span class="section-eyebrow">CATEGORY 03</span>
+        <h2 class="section-title">Floral Bunches &amp; Mixed Arrangements</h2>
+        <div class="botanical-divider">
+          <div class="line"></div>
+          <svg><use href="#icon-shola-bloom"/></svg>
+          <div class="line"></div>
+        </div>
+        <p class="section-subtitle">
+          Pre-arranged compositions combining shola flowers, dried grass, and natural textures ready for gifting, retail shelves, and event tables.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Bunch 1: Shola Floral Bunch -->
+        <div class="product-card reveal-fade-up delay-1">
+          <div class="product-image-container">
+            <span class="product-badge">Ready Bouquet</span>
+            <img src="assets/images/shola-floral-bunch.jpg" alt="Shola Floral Bunch Botanical Composition" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Floral Bunch</span>
+            <h3 class="product-title">Shola Floral Bunch</h3>
+            <p class="product-desc">
+              Harmonious arrangement of natural white shola blooms, dried wheat stems, and botanical twigs tied for instant vase placement.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20the%20Shola%20Floral%20Bunch." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bunch 2: Botanical Craft Assortment -->
+        <div class="product-card reveal-fade-up delay-2">
+          <div class="product-image-container">
+            <span class="product-badge">Bulk Assortment</span>
+            <img src="assets/images/shola-botanical-balls.jpg" alt="Shola Botanical Balls and Craft Pack" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Floral Bunch</span>
+            <h3 class="product-title">Botanical Assortment</h3>
+            <p class="product-desc">
+              Assorted pack featuring shola floral orbs, pine sticks, and miniature blooms. Specially packaged for event designers and bulk craft requirements.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20the%20Botanical%20Assortment." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bunch 3: Shola Pampas Bouquet -->
+        <div class="product-card reveal-fade-up delay-3">
+          <div class="product-image-container">
+            <span class="product-badge">Boho Styling</span>
+            <img src="assets/images/shola-pampas-bouquet.jpg" alt="Shola and Dried Pampas Bouquet" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Floral Bunch</span>
+            <h3 class="product-title">Shola Pampas Bouquet</h3>
+            <p class="product-desc">
+              Feathery dried pampas plumes paired with focal shola roses and dried filler botanicals, bringing modern bohemian elegance to interior spaces.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20the%20Shola%20Pampas%20Bouquet." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bunch 4: Handcrafted Pink Rose Bouquet Cone -->
+        <div class="product-card reveal-fade-up delay-1">
+          <div class="product-image-container">
+            <span class="product-badge">Gift Ready</span>
+            <img src="assets/images/shola-pink-rose-bouquet.jpg" alt="Handcrafted Pink Shola Rose Bouquet Cone" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Floral Bunch</span>
+            <h3 class="product-title">Pink Rose Bouquet Cone</h3>
+            <p class="product-desc">
+              Handcrafted pink shola wood roses, ivory gardenia, and dried botanical buds wrapped in luxury cone sleeve ready for gifting.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20the%20Pink%20Rose%20Bouquet%20Cone." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bunch 5: Golden Wheat & Rose Floral Bunch -->
+        <div class="product-card reveal-fade-up delay-2">
+          <div class="product-image-container">
+            <span class="product-badge">Tabletop Bunch</span>
+            <img src="assets/images/shola-wheat-rose-bouquet.jpg" alt="Golden Wheat and Shola Rose Floral Bunch" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="product-category">Floral Bunch</span>
+            <h3 class="product-title">Golden Wheat &amp; Rose Bunch</h3>
+            <p class="product-desc">
+              Rich natural arrangement featuring golden dried wheat stalks, two-tone pink roses, and sculpted white botanical blooms.
+            </p>
+            <div class="product-actions">
+              <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola">
+                <i class="fas fa-phone-alt"></i> CALL
+              </a>
+              <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20the%20Golden%20Wheat%20Bunch." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola btn-sm-shola">
+                <i class="fab fa-whatsapp"></i> ENQUIRE NOW
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 08: CUSTOM & BULK ORDERS
+       ========================================================================== -->
+  <section class="section-padding custom-order-section" id="bulk-custom-catalog">
+    <svg class="botanical-corner top-right" aria-hidden="true"><use href="#icon-branch"/></svg>
+    <svg class="botanical-corner bottom-left" aria-hidden="true"><use href="#icon-shola-bloom"/></svg>
+
+    <div class="container-custom">
+      <div class="custom-order-wrapper reveal-fade-up">
+        <span class="section-eyebrow">CUSTOM SIZING &amp; BULK QUANTITIES</span>
+        <h2 class="section-title">Need a Custom or Bulk Floral Requirement?</h2>
+        <div class="botanical-divider divider-light">
+          <div class="line"></div>
+          <svg><use href="#icon-shola-bloom"/></svg>
+          <div class="line"></div>
+        </div>
+        <p class="section-subtitle">
+          We welcome wholesale, bulk and custom enquiries for businesses, decorators, retailers and resellers. Contact us directly with your specifications, volume requirements, and timeline.
+        </p>
+
+        <div class="custom-order-cta-group">
+          <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20a%20custom%20or%20bulk%20floral%20order." target="_blank" rel="noopener noreferrer" class="btn-shola btn-custom-light">
+            <i class="fab fa-whatsapp"></i>
+            <span>WHATSAPP ENQUIRY</span>
+          </a>
+          <a href="contact.html" class="btn-shola btn-custom-outline">
+            <i class="fas fa-envelope"></i>
+            <span>CONTACT US</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GLOBAL FOOTER (SHARED COMPONENT)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="footer-grid">
+        <!-- Col 1: Wordmark & Philosophy -->
+        <div>
+          <a href="index.html" class="brand-wordmark brand-light">
+            <img src="assets/images/logo.png" alt="SB Shola Wood Flowers Logo" class="brand-logo img-fluid mb-2" style="max-height: 48px; width: auto;">
+            <span class="brand-sub">MANUFACTURER</span>
+            <span class="brand-main">SB SHOLA WOOD FLOWERS</span>
+            <span class="brand-tagline">Shola Dry Flower Manufacturer</span>
+          </a>
+          <p class="footer-quote">“Handcrafted botanical beauty inspired by nature, shaped with artisan care.”</p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right" style="font-size: 0.65rem; margin-right: 6px;"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size: 0.65rem; margin-right: 6px;"></i> About Us</a></li>
+            <li><a href="product.html"><i class="fas fa-chevron-right" style="font-size: 0.65rem; margin-right: 6px;"></i> Products &amp; Catalog</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right" style="font-size: 0.65rem; margin-right: 6px;"></i> Visual Archive</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size: 0.65rem; margin-right: 6px;"></i> Contact &amp; Enquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Business Credentials -->
+        <div>
+          <h4 class="footer-heading">Business Information</h4>
+          <ul class="footer-links" style="gap: 0.65rem;">
+            <li style="color: var(--c-soft-beige); font-size: 0.88rem; line-height: 1.4;">
+              <span style="display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-light-brown); font-weight: 600;">Registered Firm</span>
+              <strong style="color: var(--c-pure-white); font-size: 0.95rem; letter-spacing: 0.03em;">S.B. DRY FLOWER</strong>
+            </li>
+            <li style="color: var(--c-soft-beige); font-size: 0.82rem; line-height: 1.4;">
+              <span style="display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-light-brown); font-weight: 600;">Proprietor</span>
+              Shiladitya Baidya
+            </li>
+            <li style="color: var(--c-soft-beige); font-size: 0.82rem;">
+              <span style="display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-light-brown); font-weight: 600;">Working Since</span>
+              2016
+            </li>
+            <li style="color: var(--c-soft-beige); font-size: 0.82rem; padding-top: 0.2rem;">
+              <span style="display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-light-brown); font-weight: 600;">GST IN</span>
+              <span style="letter-spacing: 0.05em; color: var(--c-pure-white); font-weight: 500;">19BTHPB9095F1ZD</span>
+              <span style="display: inline-block; margin-left: 6px; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background-color: rgba(185, 139, 104, 0.25); color: var(--c-soft-beige); border: 1px solid rgba(185, 139, 104, 0.4); padding: 1px 6px; border-radius: 2px;">TAX FREE ITEM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Location -->
+        <div>
+          <h4 class="footer-heading">Contact &amp; Delivery</h4>
+          <ul class="footer-links" style="gap: 0.6rem; margin-bottom: 1rem;">
+            <li><a href="tel:+919564001936"><i class="fas fa-phone-alt"></i> +91 9564001936</a></li>
+            <li><a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp Support</a></li>
+            <li><a href="https://www.instagram.com/sb_shola_wood_flowers_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> @sb_shola_wood_flowers_</a></li>
+            <li style="color: var(--c-soft-beige); font-size: 0.8rem; line-height: 1.45; padding-top: 0.3rem;">
+              <i class="fas fa-map-marker-alt" style="color: var(--c-light-brown); margin-right: 4px;"></i>
+              Pukuria, P.O.- Puba Gopal Nagar, P.S.- Mandir Bazar, Dist.- 24 Parganas (S), Pin.- 743395, West Bengal, India
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 SB SHOLA WOOD FLOWERS (S.B. DRY FLOWER). All Rights Reserved.
+        </div>
+        <div>
+          Handcrafted Botanical Manufacturing &amp; Pan-India Supply
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20your%20handcrafted%20flowers." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Chat on WhatsApp" id="floating-whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <button class="floating-scroll-top" aria-label="Scroll to top" id="scroll-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

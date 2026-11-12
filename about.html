@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | SB SHOLA WOOD FLOWERS - Handcrafted Botanical Craft Since 2016</title>
+  <meta name="description" content="Discover the story of SB Shola Wood Flowers (S.B. Dry Flower) — established in 2016 in West Bengal, India. Handcrafted shola wood flowers, natural pith craftsmanship, and pan-India wholesale supply.">
+  <meta name="keywords" content="About SB Shola Wood Flowers, S.B. Dry Flower, shola flower history, sola wood craft manufacturer, handmade dried flowers, Indian botanical art, Mandir Bazar 24 Parganas">
+
+  <!-- Preload Critical Hero Image for Maximum Performance -->
+  <link rel="preload" as="image" href="assets/images/hero-shola.jpg">
+
+  <!-- Google Fonts: Cormorant Garamond & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="about-page">
+
+  <!-- Subtle Botanical Canvas for soft floating particles -->
+  <canvas id="botanical-canvas"></canvas>
+
+  <!-- SVG Botanical Sprite Icons Definition -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-branch" viewBox="0 0 100 100">
+      <path d="M50 95 C 48 70, 52 40, 50 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      <path d="M50 75 C 40 68, 30 65, 22 66 C 24 60, 35 60, 50 70" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M51 60 C 62 52, 72 50, 80 52 C 77 45, 65 47, 51 55" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M50 45 C 38 38, 28 35, 20 37 C 23 30, 36 32, 50 40" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M50 30 C 60 22, 70 20, 78 22 C 75 16, 62 18, 50 25" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <circle cx="20" cy="37" r="2.5" fill="currentColor"/>
+      <circle cx="80" cy="52" r="2.5" fill="currentColor"/>
+      <circle cx="22" cy="66" r="2.5" fill="currentColor"/>
+      <circle cx="78" cy="22" r="2.5" fill="currentColor"/>
+      <circle cx="50" cy="5" r="3" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="icon-shola-bloom" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+      <path d="M50 40 C 45 30, 55 30, 50 40" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M60 50 C 70 45, 70 55, 60 50" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M50 60 C 55 70, 45 70, 50 60" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M40 50 C 30 55, 30 45, 40 50" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M50 32 C 38 12, 62 12, 50 32" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M68 50 C 88 38, 88 62, 68 50" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M50 68 C 62 88, 38 88, 50 68" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <path d="M32 50 C 12 62, 12 38, 32 50" stroke="currentColor" stroke-width="1.2" fill="none"/>
+      <circle cx="50" cy="50" r="3" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="icon-natural-leaf" viewBox="0 0 64 64">
+      <path d="M32 58 C 32 58, 54 44, 54 28 C 54 14, 42 6, 32 6 C 22 6, 10 14, 10 28 C 10 44, 32 58, 32 58 Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M32 58 L 32 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M32 44 C 40 38, 46 36, 48 35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M32 34 C 24 28, 18 26, 16 25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M32 24 C 38 19, 42 18, 44 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="icon-artisan-craft" viewBox="0 0 64 64">
+      <path d="M32 8 C 24 8, 18 14, 18 22 C 18 30, 26 38, 32 44 C 38 38, 46 30, 46 22 C 46 14, 40 8, 32 8 Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <circle cx="32" cy="22" r="5" stroke="currentColor" stroke-width="1.8" fill="none"/>
+      <path d="M12 56 C 12 46, 20 42, 32 42 C 44 42, 52 46, 52 56" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="icon-versatile-decor" viewBox="0 0 64 64">
+      <path d="M22 56 L 42 56 C 45 56, 47 54, 47 51 L 44 28 L 20 28 L 17 51 C 17 54, 19 56, 22 56 Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/>
+      <ellipse cx="32" cy="28" rx="12" ry="4" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M32 24 L 32 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="32" cy="7" r="3" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="icon-timeless-clock" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M32 16 L 32 32 L 44 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="32" cy="32" r="3" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <!-- ========================================================================== 
+       TOPBAR (SHARED COMPONENT)
+       ========================================================================== -->
+  <div class="site-topbar" id="site-topbar">
+    <div class="container-custom topbar-container">
+      <div class="topbar-left">
+        <a href="tel:+919564001936" class="topbar-contact" id="topbar-phone">
+          <i class="fas fa-phone-alt" aria-hidden="true"></i>
+          <span>+91 9564001936</span>
+        </a>
+        <span class="topbar-divider"></span>
+        <span class="topbar-badge">
+          <i class="fas fa-truck-fast" aria-hidden="true"></i> Pan-India Supply Available
+        </span>
+      </div>
+      <div class="topbar-right">
+        <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20your%20handcrafted%20shola%20dry%20flowers." target="_blank" rel="noopener noreferrer" class="topbar-social" aria-label="Chat on WhatsApp" id="topbar-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/sb_shola_wood_flowers_/" target="_blank" rel="noopener noreferrer" class="topbar-social" aria-label="Visit SB Shola Wood Flowers on Instagram" id="topbar-instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================== 
+       NAVBAR (GLOBAL COMPONENT - ABOUT ACTIVE)
+       ========================================================================== -->
+  <header class="site-navbar" id="site-navbar">
+    <div class="container-custom nav-container">
+      <!-- Left: Logo -->
+      <a href="index.html" class="brand-wordmark navbar-brand" id="brand-logo-link">
+        <img src="assets/images/logo.png" alt="SB Shola Wood Flowers Logo" id="brand-logo" class="brand-logo img-fluid">
+      </a>
+
+      <!-- Center: Navigation Menu -->
+      <nav class="nav-center-menu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link-item" id="nav-home">HOME</a></li>
+          <li><a href="about.html" class="nav-link-item active" id="nav-about">ABOUT</a></li>
+          <li><a href="product.html" class="nav-link-item" id="nav-product">PRODUCT</a></li>
+          <li><a href="gallery.html" class="nav-link-item" id="nav-gallery">GALLERY</a></li>
+          <li><a href="contact.html" class="nav-link-item" id="nav-contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Direct Call, WhatsApp Button & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="tel:+919564001936" class="btn-shola btn-outline-shola btn-sm-shola" id="nav-call-btn">
+          <i class="fas fa-phone-alt"></i> CALL NOW
+        </a>
+        <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20your%20handcrafted%20shola%20dry%20flowers." target="_blank" rel="noopener noreferrer" class="btn-shola btn-whatsapp-shola btn-sm-shola" id="nav-whatsapp-btn">
+          <i class="fab fa-whatsapp"></i> WHATSAPP ENQUIRY
+        </a>
+        <button class="nav-mobile-toggle" aria-label="Open Navigation Menu" id="mobile-toggle-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-hidden="true" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-wordmark navbar-brand">
+        <span class="brand-sub">MANUFACTURER</span>
+        <img src="assets/images/logo.png" alt="SB Shola Wood Flowers Logo" class="brand-logo img-fluid">
+        <span class="brand-tagline">HANDCRAFTED BOTANICAL CRAFT</span>
+      </div>
+      <button class="mobile-nav-close" aria-label="Close Menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">HOME</a></li>
+      <li><a href="about.html" class="mobile-nav-link active">ABOUT</a></li>
+      <li><a href="product.html" class="mobile-nav-link">PRODUCT</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link">GALLERY</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">CONTACT</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="tel:+919564001936" class="btn-shola btn-outline-shola w-100" style="width: 100%; margin-bottom: 0.6rem;">
+        <i class="fas fa-phone-alt"></i> CALL NOW (9564001936)
+      </a>
+      <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener noreferrer" class="btn-shola btn-primary-shola w-100" style="width: 100%; margin-bottom: 0.8rem;">
+        <i class="fab fa-whatsapp"></i> WHATSAPP ENQUIRY (9564001936)
+      </a>
+      <p style="font-size: 0.75rem; text-align: center; color: var(--c-light-brown); text-transform: uppercase; letter-spacing: 0.15em; margin: 0;">
+        Pan-India Supply Available
+      </p>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       SECTION 01: INNER PAGE HERO
+       ========================================================================== -->
+  <section class="inner-page-hero">
+    <svg class="botanical-corner top-right" aria-hidden="true"><use href="#icon-branch"/></svg>
+    <svg class="botanical-corner bottom-left" aria-hidden="true"><use href="#icon-shola-bloom"/></svg>
+
+    <div class="container-custom">
+      <div class="inner-page-hero-content reveal-fade-up">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+          <span>About Us</span>
+        </div>
+        <h1 class="hero-title">About SB Shola Wood Flowers</h1>
+        <div class="botanical-divider">
+          <div class="line"></div>
+          <svg><use href="#icon-shola-bloom"/></svg>
+          <div class="line"></div>
+        </div>
+        <p class="hero-subtitle">
+          Crafting Natural Beauty Since 2016
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 02: OUR STORY
+       ========================================================================== -->
+  <section class="section-padding about-section" id="our-story">
+    <div class="container-custom">
+      <div class="about-grid">
+        <!-- Story Image -->
+        <div class="about-image-wrapper reveal-fade-up">
+          <div class="about-accent-frame"></div>
+          <div class="about-image-container">
+            <img src="assets/images/pine.jpg" alt="SB Shola Wood Flowers Handcrafted Botanical Pine Craft" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Story Narrative -->
+        <div class="about-content reveal-fade-up delay-1">
+          <span class="section-eyebrow">OUR HERITAGE &amp; PURPOSE</span>
+          <h2 class="about-title">The Story Behind Our Craft</h2>
+          
+          <div class="botanical-divider left-aligned">
+            <div class="line"></div>
+            <svg><use href="#icon-shola-bloom"/></svg>
+            <div class="line"></div>
+          </div>
+
+          <p class="about-text">
+            <strong>SB SHOLA WOOD FLOWERS (S.B. DRY FLOWER)</strong> was founded in <strong>2016</strong> under the proprietorship of <strong>Shiladitya Baidya</strong> in Mandir Bazar, South 24 Parganas, West Bengal. Born out of a deep respect for Bengal's centuries-old tradition of sholapith craftsmanship, the business was established to bring high-quality, handcrafted shola floral products directly to decorators, businesses, and flower lovers across India.
+          </p>
+          <p class="about-text">
+            Over the years, we have focused on refining the processing of natural shola pith—from raw reed harvesting to precision blade slicing and artisan petal shaping. What began as a local workshop has developed into a dependable manufacturing and supply setup capable of handling large-scale wholesale orders, regular retail supply, and bespoke floral assortments.
+          </p>
+          <p class="about-text">
+            Today, our products travel from our workshop in West Bengal to clients across multiple Indian states, serving wedding decorators, florists, craft studios, and interior designers who value genuine organic materials and enduring craftsmanship.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 03: CRAFTED FROM NATURE, MADE WITH CARE (VIDEO + CRAFT PHILOSOPHY)
+       ========================================================================== -->
+  <section class="section-padding" style="background-color: var(--c-soft-tint);" id="crafted-from-nature">
+    <svg class="botanical-corner center-floating" aria-hidden="true"><use href="#icon-branch"/></svg>
+    <div class="container-custom">
+      <div class="about-grid">
+        <!-- Video Container -->
+        <div class="about-image-wrapper reveal-fade-up">
+          <div class="about-accent-frame"></div>
+          <div class="about-image-container">
+            <video
+              class="about-video"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="auto"
+            >
+              <source src="assets/images/about-vdo.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <!-- Detail Content -->
+        <div class="about-content reveal-fade-up delay-1">
+          <span class="section-eyebrow">ARTISAN DEDICATION</span>
+          <h2 class="about-title">Crafted From Nature, Made With Care</h2>
+          
+          <div class="botanical-divider left-aligned">
+            <div class="line"></div>
+            <svg><use href="#icon-shola-bloom"/></svg>
+            <div class="line"></div>
+          </div>
+
+          <p class="about-text">
+            Shola is a natural aquatic plant that grows wild in marshlands. The inner core (pith) of the stem is uniquely soft, spongy, milky white, and extremely lightweight. Slicing this pith requires immense tactile skill and traditional sharp knives called <em>kath</em>.
+          </p>
+          <p class="about-text">
+            Our artisans shape each petal by hand—gently curling, fluting, layering, and securing them into lifelike roses, blooming lotuses, pine sticks, and decorative stems. Because no harsh chemicals or artificial plastics are needed, every flower retains its gentle botanical elegance and organic texture.
+          </p>
+          <p class="about-text">
+            Every batch undergoes careful finishing, stem binding, and quality inspection before packing, ensuring our clients receive consistent, premium florals ready for display and commercial styling.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 04: NATURAL MATERIAL BADGES
+       ========================================================================== -->
+  <section class="highlights-section" id="material-badges">
+    <div class="container-custom">
+      <div class="highlights-grid">
+        <div class="highlight-card reveal-fade-up delay-1">
+          <div class="highlight-icon-box">
+            <svg><use href="#icon-natural-leaf"/></svg>
+          </div>
+          <div class="highlight-info">
+            <h3>Natural Shola Pith</h3>
+            <p>100% Organic Renewable Marshland Plant Material</p>
+          </div>
+        </div>
+
+        <div class="highlight-card reveal-fade-up delay-2">
+          <div class="highlight-icon-box">
+            <svg><use href="#icon-artisan-craft"/></svg>
+          </div>
+          <div class="highlight-info">
+            <h3>Handcrafted</h3>
+            <p>Artisan Sliced &amp; Sculpted Petal By Petal</p>
+          </div>
+        </div>
+
+        <div class="highlight-card reveal-fade-up delay-3">
+          <div class="highlight-icon-box">
+            <svg><use href="#icon-versatile-decor"/></svg>
+          </div>
+          <div class="highlight-info">
+            <h3>Lightweight Structure</h3>
+            <p>Effortless to Handle, Ship &amp; Incorporate into Décor</p>
+          </div>
+        </div>
+
+        <div class="highlight-card reveal-fade-up delay-4">
+          <div class="highlight-icon-box">
+            <svg><use href="#icon-shola-bloom"/></svg>
+          </div>
+          <div class="highlight-info">
+            <h3>Botanical Inspired</h3>
+            <p>Authentic Floral Forms in Warm Natural Ivory Tones</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 05: ARTISAN JOURNEY (3-STEP MANUFACTURING PROCESS)
+       ========================================================================== -->
+  <section class="section-padding craft-section" id="artisan-journey">
+    <div class="container-custom">
+      <div class="section-header reveal-fade-up">
+        <span class="section-eyebrow">OUR MANUFACTURING JOURNEY</span>
+        <h2 class="section-title">From Pith to Finished Flower</h2>
+        <div class="botanical-divider">
+          <div class="line"></div>
+          <svg><use href="#icon-branch"/></svg>
+          <div class="line"></div>
+        </div>
+        <p class="section-subtitle">
+          The meticulous 3-step artisan manufacturing methodology practiced at SB Shola Wood Flowers.
+        </p>
+      </div>
+
+      <div class="craft-steps-grid">
+        <!-- Step 01 -->
+        <div class="craft-step-card reveal-fade-up delay-1">
+          <div class="craft-image-container">
+            <img src="assets/images/craft-step-01-select.jpg" alt="01 - Select Natural Shola Material" loading="lazy">
+          </div>
+          <div class="craft-step-content">
+            <div class="craft-number">01</div>
+            <h3 class="craft-title">SELECT &amp; PREPARE</h3>
+            <p class="craft-desc">
+              We harvest and sort high-quality natural shola reeds. The outer bark is carefully peeled to expose the soft, clean, white inner pith cylinder, which is graded for purity and texture.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="craft-step-card reveal-fade-up delay-2">
+          <div class="craft-image-container">
+            <img src="assets/images/craft-step-02-carve.jpg" alt="02 - Craft Petals By Hand" loading="lazy">
+          </div>
+          <div class="craft-step-content">
+            <div class="craft-number">02</div>
+            <h3 class="craft-title">CRAFT &amp; SCULPT</h3>
+            <p class="craft-desc">
+              Artisans slice paper-thin sheets from the pith rolls and manually contour each petal. The petals are curled, folded, and shaped into botanical silhouettes like roses, pinecones, and lotuses.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="craft-step-card reveal-fade-up delay-3">
+          <div class="craft-image-container">
+            <img src="assets/images/shola-white-roses-pack.jpg" alt="03 - Quality Inspection &amp; Wholesale Packaging" loading="lazy">
+          </div>
+          <div class="craft-step-content">
+            <div class="craft-number">03</div>
+            <h3 class="craft-title">ARRANGE &amp; DISPATCH</h3>
+            <p class="craft-desc">
+              Finished blossoms are mounted onto natural stems, tied into balanced bouquets, or bundled for bulk consignments with protective packaging designed for safe pan-India shipping.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 06: FROM MATERIAL TO FLOWER (5-STEP VISUAL TRANSFORMATION)
+       ========================================================================== -->
+  <section class="section-padding transformation-section" id="transformation-story">
+    <div class="container-custom">
+      <div class="section-header reveal-fade-up">
+        <span class="section-eyebrow">STEP-BY-STEP PROGRESSION</span>
+        <h2 class="section-title">The Transformation Flow</h2>
+        <div class="botanical-divider">
+          <div class="line"></div>
+          <svg><use href="#icon-shola-bloom"/></svg>
+          <div class="line"></div>
+        </div>
+        <p class="section-subtitle">
+          How raw wetland reeds evolve through skilled hands into refined botanical collections.
+        </p>
+      </div>
+
+      <div class="transformation-grid">
+        <div class="transform-step-card reveal-fade-up delay-1">
+          <div class="transform-step-num">1</div>
+          <h4>Natural Shola</h4>
+          <p>Harvested renewable aquatic marsh reeds with soft internal pith.</p>
+        </div>
+
+        <div class="transform-step-card reveal-fade-up delay-2">
+          <div class="transform-step-num">2</div>
+          <h4>Prepared Pith</h4>
+          <p>Debarked, clean white cylinders sliced into thin sheets.</p>
+        </div>
+
+        <div class="transform-step-card reveal-fade-up delay-3">
+          <div class="transform-step-num">3</div>
+          <h4>Handcrafted Petals</h4>
+          <p>Curled and sculpted individually to mimic real floral anatomy.</p>
+        </div>
+
+        <div class="transform-step-card reveal-fade-up delay-4">
+          <div class="transform-step-num">4</div>
+          <h4>Floral Components</h4>
+          <p>Mounted with stems, natural dried twigs, and botanical accents.</p>
+        </div>
+
+        <div class="transform-step-card reveal-fade-up delay-4">
+          <div class="transform-step-num">5</div>
+          <h4>Finished Collection</h4>
+          <p>Complete bouquets, stems, and boxed assortments for clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 07: WHY SHOLA? (DETAILED BENEFIT CARDS)
+       ========================================================================== -->
+  <section class="section-padding why-shola-section" id="why-shola-details">
+    <svg class="botanical-corner top-right" aria-hidden="true"><use href="#icon-branch"/></svg>
+    <svg class="botanical-corner bottom-left" aria-hidden="true"><use href="#icon-shola-bloom"/></svg>
+
+    <div class="container-custom">
+      <div class="section-header reveal-fade-up">
+        <span class="section-eyebrow">ESSENTIAL QUALITIES</span>
+        <h2 class="section-title">Why Shola is the Natural Choice</h2>
+        <div class="botanical-divider divider-light">
+          <div class="line"></div>
+          <svg><use href="#icon-branch"/></svg>
+          <div class="line"></div>
+        </div>
+        <p class="section-subtitle">
+          Exploring the unique characteristics that make shola dry flowers an exceptional medium for décor and styling.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal-fade-up delay-1">
+          <div class="why-icon-box">
+            <svg><use href="#icon-natural-leaf"/></svg>
+          </div>
+          <h3 class="why-card-title">NATURAL CHARACTER</h3>
+          <p class="why-card-text">
+            Completely organic plant pith with a soft, wood-grain texture and subtle natural ivory sheen that harmonizes with any setting.
+          </p>
+        </div>
+
+        <div class="why-card reveal-fade-up delay-2">
+          <div class="why-icon-box">
+            <svg><use href="#icon-artisan-craft"/></svg>
+          </div>
+          <h3 class="why-card-title">LIGHTWEIGHT &amp; STRONG</h3>
+          <p class="why-card-text">
+            Remarkably feather-light yet sturdy when shaped, making shipping easy and allowing effortless mounting on delicate installations.
+          </p>
+        </div>
+
+        <div class="why-card reveal-fade-up delay-3">
+          <div class="why-icon-box">
+            <svg><use href="#icon-versatile-decor"/></svg>
+          </div>
+          <h3 class="why-card-title">VERSATILE STYLING</h3>
+          <p class="why-card-text">
+            Easily combines with pampas grass, dried eucalyptus, wheat sticks, and ceramic vases for contemporary or classic interior looks.
+          </p>
+        </div>
+
+        <div class="why-card reveal-fade-up delay-4">
+          <div class="why-icon-box">
+            <svg><use href="#icon-timeless-clock"/></svg>
+          </div>
+          <h3 class="why-card-title">DURABLE WHEN STORED</h3>
+          <p class="why-card-text">
+            When kept away from moisture and direct rain, shola flowers retain their appearance and charm over extended periods without wilting.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 08: WHO WE SERVE
+       ========================================================================== -->
+  <section class="section-padding who-we-serve-section" id="who-we-serve">
+    <div class="container-custom">
+      <div class="section-header reveal-fade-up">
+        <span class="section-eyebrow">OUR CLIENTELE</span>
+        <h2 class="section-title">Who We Serve Across India</h2>
+        <div class="botanical-divider">
+          <div class="line"></div>
+          <svg><use href="#icon-branch"/></svg>
+          <div class="line"></div>
+        </div>
+        <p class="section-subtitle">
+          We supply our handcrafted botanical products to diverse businesses and creative professionals.
+        </p>
+      </div>
+
+      <div class="who-we-serve-grid">
+        <div class="serve-card reveal-fade-up delay-1">
+          <div class="serve-icon"><i class="fas fa-spa"></i></div>
+          <h3>Florists &amp; Studios</h3>
+          <p>Supplying dried floral fillers, focal roses, and unique stems for boutique arrangements and dry bouquets.</p>
+        </div>
+
+        <div class="serve-card reveal-fade-up delay-2">
+          <div class="serve-icon"><i class="fas fa-couch"></i></div>
+          <h3>Home Décor Brands</h3>
+          <p>Providing ready-to-display stems, vases, and botanical bundles for lifestyle retail and curated catalog collections.</p>
+        </div>
+
+        <div class="serve-card reveal-fade-up delay-3">
+          <div class="serve-icon"><i class="fas fa-glass-cheers"></i></div>
+          <h3>Event Decorators</h3>
+          <p>Bulk floral sticks, lotus blooms, and decorative twigs for wedding stages, backdrop arches, and festival installations.</p>
+        </div>
+
+        <div class="serve-card reveal-fade-up delay-4">
+          <div class="serve-icon"><i class="fas fa-gift"></i></div>
+          <h3>Gift &amp; Craft Makers</h3>
+          <p>Handcrafted miniature flowers and assortments for hampers, candle accents, resin art, and bespoke gifting.</p>
+        </div>
+
+        <div class="serve-card reveal-fade-up delay-1">
+          <div class="serve-icon"><i class="fas fa-store"></i></div>
+          <h3>Retailers &amp; Shops</h3>
+          <p>Packaged stems and table floral bunches ready for retail display in handicraft and lifestyle outlets.</p>
+        </div>
+
+        <div class="serve-card reveal-fade-up delay-2">
+          <div class="serve-icon"><i class="fas fa-boxes-packing"></i></div>
+          <h3>Wholesalers</h3>
+          <p>Bulk volume manufacturing with direct workshop pricing and organized pan-India transportation.</p>
+        </div>
+
+        <div class="serve-card reveal-fade-up delay-3">
+          <div class="serve-icon"><i class="fas fa-tags"></i></div>
+          <h3>Resellers</h3>
+          <p>Supplying consistent, quality-checked batches to regional distributors and online craft resellers.</p>
+        </div>
+
+        <div class="serve-card reveal-fade-up delay-4">
+          <div class="serve-icon"><i class="fas fa-paint-roller"></i></div>
+          <h3>Interior Stylists</h3>
+          <p>Custom dried floral compositions for hotels, restaurants, corporate offices, and model apartments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 09: BUSINESS CAPABILITY & CTA
+       ========================================================================== -->
+  <section class="section-padding custom-order-section" id="about-capability-cta">
+    <svg class="botanical-corner top-right" aria-hidden="true"><use href="#icon-branch"/></svg>
+    <svg class="botanical-corner bottom-left" aria-hidden="true"><use href="#icon-shola-bloom"/></svg>
+
+    <div class="container-custom">
+      <div class="custom-order-wrapper reveal-fade-up">
+        <span class="section-eyebrow">MANUFACTURING CAPABILITIES</span>
+        <h2 class="section-title">Ready to Discuss Your Requirement?</h2>
+        <div class="botanical-divider divider-light">
+          <div class="line"></div>
+          <svg><use href="#icon-shola-bloom"/></svg>
+          <div class="line"></div>
+        </div>
+        <p class="section-subtitle">
+          Whether you need regular wholesale supplies, custom floral assortments, or event quantities, our workshop is equipped to handle your requirements with care and punctuality.
+        </p>
+
+        <div class="custom-order-cta-group">
+          <a href="contact.html" class="btn-shola btn-custom-light">
+            <i class="fas fa-comments"></i>
+            <span>DISCUSS YOUR REQUIREMENT</span>
+          </a>
+          <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20discuss%20a%20floral%20supply%20requirement." target="_blank" rel="noopener noreferrer" class="btn-shola btn-custom-outline">
+            <i class="fab fa-whatsapp"></i>
+            <span>WHATSAPP (+91 9564001936)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GLOBAL FOOTER (SHARED COMPONENT)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="footer-grid">
+        <!-- Col 1: Wordmark & Philosophy -->
+        <div>
+          <a href="index.html" class="brand-wordmark brand-light">
+            <img src="assets/images/logo.png" alt="SB Shola Wood Flowers Logo" class="brand-logo img-fluid mb-2" style="max-height: 48px; width: auto;">
+            <span class="brand-sub">MANUFACTURER</span>
+            <span class="brand-main">SB SHOLA WOOD FLOWERS</span>
+            <span class="brand-tagline">Shola Dry Flower Manufacturer</span>
+          </a>
+          <p class="footer-quote">“Handcrafted botanical beauty inspired by nature, shaped with artisan care.”</p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right" style="font-size: 0.65rem; margin-right: 6px;"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size: 0.65rem; margin-right: 6px;"></i> About Us</a></li>
+            <li><a href="product.html"><i class="fas fa-chevron-right" style="font-size: 0.65rem; margin-right: 6px;"></i> Products &amp; Catalog</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right" style="font-size: 0.65rem; margin-right: 6px;"></i> Visual Archive</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size: 0.65rem; margin-right: 6px;"></i> Contact &amp; Enquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Business Credentials -->
+        <div>
+          <h4 class="footer-heading">Business Information</h4>
+          <ul class="footer-links" style="gap: 0.65rem;">
+            <li style="color: var(--c-soft-beige); font-size: 0.88rem; line-height: 1.4;">
+              <span style="display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-light-brown); font-weight: 600;">Registered Firm</span>
+              <strong style="color: var(--c-pure-white); font-size: 0.95rem; letter-spacing: 0.03em;">S.B. DRY FLOWER</strong>
+            </li>
+            <li style="color: var(--c-soft-beige); font-size: 0.82rem; line-height: 1.4;">
+              <span style="display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-light-brown); font-weight: 600;">Proprietor</span>
+              Shiladitya Baidya
+            </li>
+            <li style="color: var(--c-soft-beige); font-size: 0.82rem;">
+              <span style="display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-light-brown); font-weight: 600;">Working Since</span>
+              2016
+            </li>
+            <li style="color: var(--c-soft-beige); font-size: 0.82rem; padding-top: 0.2rem;">
+              <span style="display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-light-brown); font-weight: 600;">GST IN</span>
+              <span style="letter-spacing: 0.05em; color: var(--c-pure-white); font-weight: 500;">19BTHPB9095F1ZD</span>
+              <span style="display: inline-block; margin-left: 6px; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background-color: rgba(185, 139, 104, 0.25); color: var(--c-soft-beige); border: 1px solid rgba(185, 139, 104, 0.4); padding: 1px 6px; border-radius: 2px;">TAX FREE ITEM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Location -->
+        <div>
+          <h4 class="footer-heading">Contact &amp; Delivery</h4>
+          <ul class="footer-links" style="gap: 0.6rem; margin-bottom: 1rem;">
+            <li><a href="tel:+919564001936"><i class="fas fa-phone-alt"></i> +91 9564001936</a></li>
+            <li><a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp Support</a></li>
+            <li><a href="https://www.instagram.com/sb_shola_wood_flowers_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> @sb_shola_wood_flowers_</a></li>
+            <li style="color: var(--c-soft-beige); font-size: 0.8rem; line-height: 1.45; padding-top: 0.3rem;">
+              <i class="fas fa-map-marker-alt" style="color: var(--c-light-brown); margin-right: 4px;"></i>
+              Pukuria, P.O.- Puba Gopal Nagar, P.S.- Mandir Bazar, Dist.- 24 Parganas (S), Pin.- 743395, West Bengal, India
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 SB SHOLA WOOD FLOWERS (S.B. DRY FLOWER). All Rights Reserved.
+        </div>
+        <div>
+          Handcrafted Botanical Manufacturing &amp; Pan-India Supply
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <a href="https://wa.me/919564001936?text=Hello%20SB%20Shola%20Wood%20Flowers,%20I%20would%20like%20to%20enquire%20about%20your%20handcrafted%20flowers." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Chat on WhatsApp" id="floating-whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <button class="floating-scroll-top" aria-label="Scroll to top" id="scroll-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
