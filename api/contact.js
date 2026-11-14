@@ -2,7 +2,8 @@
 const nodemailer = require('nodemailer');
 
 // ===== Mail settings (yahin change karo) =====
-const SMTP_USER = 'info.skcinfotech@gmail.com';
+// Pehla login fail ho to doosra try hoga (purane PHP jaisa)
+const SMTP_USERS = ['info.skcinfotech@gmail.com', 'skc.coder@gmail.com'];
 const SMTP_PASS = 'nphyiypykjdngkuo'; // Gmail App Password (16 letters, bina space)
 const MAIL_TO = 'skc.coder@gmail.com';
 // =============================================
@@ -73,20 +74,13 @@ module.exports = async (req, res) => {
     });
   } catch (_) { /* ignore */ }
 
-  const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 587,
-    secure: false,
-    auth: { user: SMTP_USER, pass: SMTP_PASS },
-  });
-
   const emailText = email || 'Not provided';
   const row = (label, val) =>
     `<tr><td style="padding:8px 0;width:150px;color:#666;font-weight:bold;">${label}</td><td style="padding:8px 0;color:#222;">${esc(val)}</td></tr>`;
 
   try {
-    await transporter.sendMail({
-      from: { name: 'SB Shola Wood Flowers Website', address: SMTP_USER },
+    const mailOptions = {
+      from: { name: 'SB Shola Wood Flowers Website', address: SMTP_USERS[0] },
       to: MAIL_TO,
       replyTo: email ? { name, address: email } : undefined,
       subject: 'New Website Enquiry - SB Shola Wood Flowers',
@@ -108,7 +102,28 @@ module.exports = async (req, res) => {
       text:
         `New Website Enquiry - SB Shola Wood Flowers\n\nFull Name: ${name}\nPhone Number: ${phone}\n` +
         `Email Address: ${emailText}\nRequirement Type: ${requirement}\n\nMessage:\n${message}\n`,
-    });
+    };
+
+    let lastErr;
+    for (const user of SMTP_USERS) {
+      try {
+        const transporter = nodemailer.createTransport({
+          host: 'smtp.gmail.com',
+          port: 587,
+          secure: false,
+          auth: { user, pass: SMTP_PASS },
+        });
+        await transporter.sendMail({ ...mailOptions, from: { ...mailOptions.from, address: user } });
+        lastErr = null;
+        break;
+      } catch (e) {
+        lastErr = e;
+        console.error(`Login/send failed for ${user}:`, e.message);
+        if (e.code !== 'EAUTH') break; // sirf login error pe agla account try karo
+      }
+    }
+    if (lastErr) throw lastErr;
+
     return respond(req, res, true, 'Your enquiry has been sent successfully.', 200);
   } catch (err) {
     console.error('Mail error:', err.message);
