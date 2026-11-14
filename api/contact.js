@@ -1,10 +1,9 @@
-// Vercel serverless function - replaces mailvalidation.php (Vercel PHP run nahi karta)
+// Vercel serverless function - replaces mailvalidation.php
 const nodemailer = require('nodemailer');
 
-// ===== Mail settings (yahin change karo) =====
-// Pehla login fail ho to doosra try hoga (purane PHP jaisa)
-const SMTP_USERS = ['info.skcinfotech@gmail.com', 'skc.coder@gmail.com'];
-const SMTP_PASS = 'nphyiypykjdngkuo'; // Gmail App Password (16 letters, bina space)
+// ===== Mail settings =====
+const SMTP_USERS = ['info.skcinfotech@gmail.com'];
+const SMTP_PASS = 'ckkbmyafolcnfkux'; // Gmail App Password (16 letters, bina space)
 const MAIL_TO = 'skc.coder@gmail.com';
 // =============================================
 
@@ -56,7 +55,6 @@ module.exports = async (req, res) => {
     return respond(req, res, false, 'Invalid characters detected in form submission.', 400);
   }
 
-  // Google Sheet lead sync (fail ho to bhi mail jayega)
   try {
     await fetch(GOOGLE_SCRIPT_URL, {
       method: 'POST',
