@@ -133,7 +133,7 @@ try {
     $mail->setFrom('info.skcinfotech@gmail.com', 'SB Shola Wood Flowers Website');
 
     // Recipient: Send all contact form submissions to info.skcinfotech@gmail.com
-    $mail->addAddress('pritichakraborty574@gmail.com');
+    $mail->addAddress('skc.coder@gmail.com');
 
     // Reply-To: If visitor provided an email, set Reply-To
     if ($email !== '') {
@@ -202,7 +202,7 @@ try {
     } catch (Exception $authEx) {
         if (strpos($mail->ErrorInfo, 'Could not authenticate') !== false) {
             $mail->smtpClose();
-            $mail->Username = 'pritichakraborty574@gmail.com';
+            $mail->Username = 'skc.coder@gmail.com';
             $mail->Password = 'nphyiypykjdngkuo';
             $mail->send();
         } else {
