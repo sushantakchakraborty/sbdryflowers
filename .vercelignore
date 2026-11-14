@@ -1,0 +1,3 @@
+# PHP files Vercel pe run nahi hote - upload kiye to source code (password sahit) public ho jata hai
+*.php
+phpmailer/

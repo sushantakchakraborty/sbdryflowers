@@ -1,0 +1,9 @@
+
+
+{
+  "name": "sb-shola-wood-flowers",
+  "private": true,
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

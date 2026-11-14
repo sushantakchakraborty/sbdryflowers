@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/mailvalidation.php", "destination": "/api/contact" }
+  ]
+}
